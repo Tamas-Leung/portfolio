@@ -5,7 +5,7 @@
 	export let onClickProjectsTab: any;
 </script>
 
-<div class="grid grid-cols-3 gap-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 	<span in:fly={{ x: -100, duration: 500 }} class="col-span-2 flex flex-col gap-4">
 		<p>
 			<bold class=" text-xl font-bold highlight">Welcome!</bold> I am a software Engineer based in Toronto,

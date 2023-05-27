@@ -29,12 +29,12 @@
 
 <title>Tamas Leung</title>
 
-<div class="page flex flex-col items-center justify-center bg-zinc-900 text-zinc-50 min-w-[900px]">
+<div class="page flex flex-col items-center justify-center bg-zinc-900 text-zinc-50">
 	<div
-		class="module w-full h-full relative max-w-7xl flex flex-col justify-start gap-4 overflow-x-hidden overflow-y-auto"
+		class=" module w-full h-full relative max-w-7xl flex flex-col justify-start overflow-x-hidden"
 	>
-		<div class="flex z-10">
-			<div class="flex w-full gap-4 items-center">
+		<div class="px-4 py-4 flex z-10 gap-4 md:flex-row">
+			<div class="flex w-full gap-4 items-center flex-col md:flex-row">
 				<div class="flex flex-col items-start justify-start">
 					<span
 						class="flex"
@@ -60,7 +60,7 @@
 				</div>
 			</div>
 
-			<ul class="flex gap-4">
+			<ul class="flex items-center flex-col md:flex-row md:gap-4 w-full">
 				{#each navOptions as option}
 					<li>
 						<button
@@ -73,7 +73,7 @@
 				{/each}
 			</ul>
 		</div>
-		<div class="z-10">
+		<div class="px-4 flex-1 overflow-y-auto overflow-x-hidden">
 			{#if selected == Options.About}
 				<About
 					onClickProjectsTab={() => {
@@ -114,26 +114,27 @@
 	.page {
 		width: 100%;
 		height: 100vh;
-		padding: 4rem 4rem;
+		@media (min-width: 768px) {
+			padding: 4rem 4rem;
+		}
 	}
 
 	.module {
-		position: relative;
-		border: 1rem solid;
-		border-style: solid;
-		padding: 2rem;
-		min-height: 70vh;
-		border-image-slice: 1;
-		// background-color: aqua;
-
-		border-image-source: conic-gradient(
-			from var(--angle),
-			hsl(100 100% 60%),
-			hsl(200 100% 60%),
-			hsl(100 100% 60%)
-		);
-		// animation: rotate 4s linear infinite, fadeInAnimation ease-in 1.5s,
-		// clipInAnimation cubic-bezier(1, 0, 0.87, 0.01) 1.5s;
+		@media (min-width: 768px) {
+			border: 1rem solid;
+			border-style: solid;
+			min-height: 70vh;
+			border-image-slice: 1;
+			// background-color: aqua;
+			border-image-source: conic-gradient(
+				from var(--angle),
+				hsl(100 100% 60%),
+				hsl(200 100% 60%),
+				hsl(100 100% 60%)
+			);
+			animation: rotate 4s linear infinite, fadeInAnimation ease-in 1.5s,
+				clipInAnimation cubic-bezier(1, 0, 0.87, 0.01) 1.5s;
+		}
 	}
 
 	.bg-image {

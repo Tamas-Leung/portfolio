@@ -10,9 +10,9 @@
 			<h2 class="text-xl">Amazon</h2>
 			<p class="experience-date">May 2022 - August 2022</p>
 		</div>
-		<div class="flex justify-between">
-			<h2 class="text-md mb-2">Software Development Intern</h2>
-			<p>Toronto, Canada</p>
+		<div class="mb-2 flex flex-col md:flex-row justify-between">
+			<h2 class="text-md">Software Development Intern</h2>
+			<p class="text-sm">Toronto, Canada</p>
 		</div>
 		<ul>
 			<li class="list-item">
@@ -46,9 +46,9 @@
 			<h2 class="text-xl">IBM</h2>
 			<p class="experience-date">May 2021 - April 2022</p>
 		</div>
-		<div class="flex justify-between">
-			<h2 class="text-md mb-2">Software Development Intern</h2>
-			<p>Markham, Canada</p>
+		<div class="mb-2 flex flex-col md:flex-row justify-between">
+			<h2 class="text-md">Software Development Intern</h2>
+			<p class="text-sm">Markham, Canada</p>
 		</div>
 		<ul>
 			<li class="list-item">
@@ -84,9 +84,9 @@
 				May 2020 - August 2020, May 2019 - August 2019, July 2018 - Augusy 2018
 			</p>
 		</div>
-		<div class="flex justify-between">
-			<h2 class="text-md mb-2">Software Development Intern</h2>
-			<p>Mississauga, Canada</p>
+		<div class="mb-2 flex flex-col md:flex-row justify-between">
+			<h2 class="text-md">Software Development Intern</h2>
+			<p class="text-sm">Mississauga, Canada</p>
 		</div>
 		<ul>
 			<li class="list-item">
@@ -119,6 +119,10 @@
 	.experience-top-row {
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-end;
+		flex-direction: column;
+		@media (min-width: 768px) {
+			flex-direction: row;
+			align-items: flex-end;
+		}
 	}
 </style>

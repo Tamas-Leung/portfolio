@@ -18,7 +18,7 @@
 <span in:fly={{ x: 100, duration: 500 }} class="flex flex-col gap-6">
 	<div>
 		<span class="text-xl">Projects: </span>
-		<ul class="flex gap-4">
+		<ul class="flex md:gap-4 md:flex-row flex-col">
 			{#each Object.values(Projects) as option}
 				<li>
 					<button
@@ -35,7 +35,7 @@
 	<div>
 		{#if selected == Projects.ETERNALRETURNMAP}
 			<div in:fly={{ x: 100, duration: 500 }}>
-				<div class="grid grid-cols-2 gap-4">
+				<div class="grid md:grid-cols-2 gap-4">
 					<div class="">
 						<h2 class="text-xl flex items-end gap-2 mb-4">
 							Eternal Return Map <a
@@ -70,7 +70,7 @@
 			</div>
 		{:else if selected == Projects.TALGG}
 			<div in:fly={{ x: 100, duration: 500 }}>
-				<div class="grid grid-cols-2 gap-4">
+				<div class="grid md:grid-cols-2 gap-4">
 					<div class="">
 						<h2 class="text-xl flex items-end gap-2 mb-4">
 							Tal.GG<a class="text-sm text-lime-200" target="_blank" href="https://www.tal.gg/"
@@ -104,7 +104,7 @@
 			</div>
 		{:else if selected == Projects.CODECHAMP}
 			<div in:fly={{ x: 100, duration: 500 }}>
-				<div class="grid grid-cols-2 gap-4">
+				<div class="grid md:grid-cols-2 gap-4">
 					<div class="">
 						<h2 class="text-xl flex items-end gap-2 mb-4">
 							CodeChamp <a target="_blank" href="https://github.com/Tamas-Leung/CodeChamp"
@@ -149,7 +149,7 @@
 			</div>
 		{:else if selected == Projects.PATHIFY}
 			<div in:fly={{ x: 100, duration: 500 }}>
-				<div class="grid grid-cols-2 gap-4">
+				<div class="grid md:grid-cols-2 gap-4">
 					<div class="">
 						<h2 class="text-xl flex items-end gap-2 mb-4">
 							Pathify <a target="_blank" href="https://github.com/Tamas-Leung/Pathify"
@@ -186,7 +186,7 @@
 			</div>
 		{:else if selected == Projects.TUTORFY}
 			<div in:fly={{ x: 100, duration: 500 }}>
-				<div class="grid grid-cols-2 gap-4">
+				<div class="grid md:grid-cols-2 gap-4">
 					<div class="">
 						<h2 class="text-xl flex items-end gap-2 mb-4">
 							Tutorfy <a target="_blank" href="https://github.com/Tamas-Leung/Tutorfy"

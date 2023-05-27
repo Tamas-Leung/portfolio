@@ -2,15 +2,15 @@
 	import { fly } from 'svelte/transition';
 </script>
 
-<span in:fly={{ x: 100, duration: 500 }} class="grid gap-4 grid-cols-2">
-	<div class="col-span-1">
+<span in:fly={{ x: 100, duration: 500 }} class="grid gap-4 md:grid-cols-2">
+	<div>
 		<div class="experience-top-row">
 			<h2 class="text-xl">McMaster University</h2>
 			<p class="experience-date">Sept 2018 - April 2023</p>
 		</div>
-		<div class="flex justify-between">
-			<h2 class="text-md mb-2">B.Eng in Software Engineering (Graduated)</h2>
-			<p>Hamilton, Canada</p>
+		<div class="mb-2 flex flex-col md:flex-row justify-between">
+			<h2 class="text-md">B.Eng in Software Engineering (Graduated)</h2>
+			<p class="text-sm">Hamilton, Canada</p>
 		</div>
 		<ul>
 			<li class="list-item">3.96/4.00 GPA (11.94 on a 12-point scale)</li>
@@ -35,7 +35,11 @@
 
 	.experience-top-row {
 		display: flex;
+		flex-direction: column;
+		@media (min-width: 768px) {
+			flex-direction: row;
+			align-items: flex-end;
+		}
 		justify-content: space-between;
-		align-items: flex-end;
 	}
 </style>

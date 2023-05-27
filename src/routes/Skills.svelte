@@ -3,9 +3,9 @@
 	import IconWithName from './IconWithName.svelte';
 </script>
 
-<div in:fly={{ x: 100, duration: 500 }} class="flex flex-col gap-2">
+<div in:fly={{ x: 100, duration: 500 }} class="flex flex-col gap-2 w-full">
 	<h2 class="text-xl">Languages / Markup</h2>
-	<ul class="flex gap-2">
+	<ul class="flex flex-wrap gap-2">
 		<IconWithName icon="skill-icons:javascript" iconName="JavaScript" />
 		<IconWithName icon="skill-icons:typescript" iconName="TypeScript" />
 		<IconWithName icon="skill-icons:java-dark" iconName="Java" />
@@ -17,7 +17,7 @@
 		<IconWithName icon="skill-icons:cs" iconName="C#" />
 	</ul>
 	<h2 class="text-xl">Frameworks</h2>
-	<ul class="flex gap-2">
+	<ul class="flex flex-wrap gap-2">
 		<IconWithName icon="skill-icons:react-dark" iconName="JavaScript" />
 		<IconWithName icon="skill-icons:svelte" iconName="Svelte" />
 		<IconWithName icon="skill-icons:angular-dark" iconName="Angular" />
@@ -28,7 +28,7 @@
 		<IconWithName icon="skill-icons:expressjs-dark" iconName="Express.js" />
 	</ul>
 	<h2 class="text-xl">Tools</h2>
-	<ul class="flex gap-2">
+	<ul class="flex flex-wrap gap-2">
 		<IconWithName icon="skill-icons:git" iconName="Git" />
 		<IconWithName icon="skill-icons:docker" iconName="Docker" />
 		<IconWithName icon="skill-icons:graphql-dark" iconName="GraphQL" />
@@ -36,14 +36,14 @@
 		<IconWithName icon="skill-icons:githubactions-dark" iconName="Github Actions" />
 	</ul>
 	<h2 class="text-xl">Database</h2>
-	<ul class="flex gap-2">
+	<ul class="flex flex-wrap gap-2">
 		<IconWithName icon="skill-icons:mysql-dark" iconName="MySql" />
 		<IconWithName icon="skill-icons:postgresql-dark" iconName="Postgres" />
 		<IconWithName icon="skill-icons:mongodb" iconName="MongoDB" />
 		<IconWithName icon="skill-icons:prisma" iconName="Prisma" />
 	</ul>
 	<h2 class="text-xl">Cloud</h2>
-	<ul class="flex gap-2">
+	<ul class="flex flex-wrap gap-2">
 		<IconWithName icon="skill-icons:aws-dark" iconName="AWS" />
 		<IconWithName icon="skill-icons:gcp-dark" iconName="GCP" />
 	</ul>
