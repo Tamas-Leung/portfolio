@@ -113,7 +113,7 @@
 
 	.page {
 		width: 100%;
-		height: 100vh;
+		height: 100svh;
 		@media (min-width: 768px) {
 			padding: 4rem 4rem;
 		}
@@ -135,16 +135,6 @@
 			animation: rotate 4s linear infinite, fadeInAnimation ease-in 1.5s,
 				clipInAnimation cubic-bezier(1, 0, 0.87, 0.01) 1.5s;
 		}
-	}
-
-	.bg-image {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		background-image: url('https://media.licdn.com/dms/image/C4E03AQEwFa_fkwTneA/profile-displayphoto-shrink_800_800/0/1652105523006?e=1690416000&v=beta&t=MVE1LMfx93RnjS5GTGKU0PI5uj00D9mAlX9sjlRwNP8');
-		background-position: 10% 70%;
-		background-size: cover;
-		filter: grayscale(100%) brightness(30%);
 	}
 
 	@keyframes clipInAnimation {
