@@ -31,8 +31,8 @@
 			</li>
 		</ul>
 		<div class="flex gap-2 mt-2">
-			<IconWithName icon="skill-icons:aws-light" iconName="AWS" />
-			<IconWithName icon="skill-icons:java-light" iconName="Java" />
+			<IconWithName icon="skill-icons:aws-dark" iconName="AWS" />
+			<IconWithName icon="skill-icons:java-dark" iconName="Java" />
 			<IconWithName icon="logos:aws-cloudformation" iconName="Cloud Formation" />
 			<IconWithName icon="logos:aws-dynamodb" iconName="Dynamo DB" />
 			<IconWithName icon="logos:aws-lambda" iconName="Lambda" />
@@ -68,12 +68,12 @@
 			</li>
 		</ul>
 		<div class="flex gap-2 mt-2">
-			<IconWithName icon="skill-icons:react-light" iconName="React" />
+			<IconWithName icon="skill-icons:react-dark" iconName="React" />
 			<IconWithName icon="skill-icons:typescript" iconName="TypeScript" />
-			<IconWithName icon="skill-icons:nextjs-light" iconName="NextJs" />
+			<IconWithName icon="skill-icons:nextjs-dark" iconName="NextJs" />
 			<IconWithName icon="skill-icons:golang" iconName="Go" />
-			<IconWithName icon="skill-icons:python-light" iconName="Python" />
-			<IconWithName icon="skill-icons:mysql-light" iconName="MySql" />
+			<IconWithName icon="skill-icons:python-dark" iconName="Python" />
+			<IconWithName icon="skill-icons:mysql-dark" iconName="MySql" />
 		</div>
 	</div>
 
@@ -97,10 +97,10 @@
 		</ul>
 		<div class="flex gap-2 mt-2">
 			<IconWithName icon="devicon:android" iconName="Android" />
-			<IconWithName icon="skill-icons:androidstudio-light" iconName="Android Studio" />
-			<IconWithName icon="skill-icons:java-light" iconName="Java" />
+			<IconWithName icon="skill-icons:androidstudio-dark" iconName="Android Studio" />
+			<IconWithName icon="skill-icons:java-dark" iconName="Java" />
 			<IconWithName icon="skill-icons:cpp" iconName="C++" />
-			<IconWithName icon="skill-icons:php-light" iconName="PHP" />
+			<IconWithName icon="skill-icons:php-dark" iconName="PHP" />
 		</div>
 	</div>
 </span>

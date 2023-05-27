@@ -16,18 +16,22 @@
 </script>
 
 <span in:fly={{ x: 100, duration: 500 }} class="flex flex-col gap-6">
-	<ul class="flex gap-4">
-		{#each Object.values(Projects) as option}
-			<li>
-				<button
-					on:click={() => {
-						selected = option;
-					}}
-					class:highlight={selected == option}>{option}</button
-				>
-			</li>
-		{/each}
-	</ul>
+	<div>
+		<span class="text-xl">Projects: </span>
+		<ul class="flex gap-4">
+			{#each Object.values(Projects) as option}
+				<li>
+					<button
+						on:click={() => {
+							selected = option;
+						}}
+						class:highlight={selected == option}>{option}</button
+					>
+				</li>
+			{/each}
+		</ul>
+	</div>
+
 	<div>
 		{#if selected == Projects.ETERNALRETURNMAP}
 			<div in:fly={{ x: 100, duration: 500 }}>
@@ -123,7 +127,7 @@
 							<IconWithName icon="skill-icons:nodejs-dark" iconName="Node.Js" />
 							<IconWithName icon="skill-icons:mongodb" iconName="MongoDB" />
 							<IconWithName icon="logos:websocket" iconName="Web Socket" />
-							<IconWithName icon="skill-icons:docker" iconName="skill-icons:docker" />
+							<IconWithName icon="skill-icons:docker" iconName="Docker" />
 							<IconWithName icon="skill-icons:githubactions-dark" iconName="Github Actions" />
 						</div>
 					</div>
