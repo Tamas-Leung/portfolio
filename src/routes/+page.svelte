@@ -24,7 +24,7 @@
 		Options.Skills
 	];
 
-	let selected = Options.Skills;
+	let selected = Options.About;
 </script>
 
 <title>Tamas Leung</title>
