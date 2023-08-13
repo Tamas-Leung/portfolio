@@ -37,9 +37,9 @@
 	</span>
 	<img
 		in:fly={{ x: 100, duration: 500 }}
-		class="image-border rotated"
+		class="image-border rotated mt-4"
 		style="--deg: 3deg"
-		src="https://media.licdn.com/dms/image/C4E03AQEwFa_fkwTneA/profile-displayphoto-shrink_800_800/0/1652105523006?e=1690416000&v=beta&t=MVE1LMfx93RnjS5GTGKU0PI5uj00D9mAlX9sjlRwNP8"
+		src="/tamas-pf.jpg"
 		alt="Tamas Leung"
 	/>
 </div>

@@ -5,14 +5,15 @@
 	import Icon from '@iconify/svelte';
 
 	const Projects = {
+		ETERNALRETURNMAPV2: 'Erbsmap.com V2',
 		ETERNALRETURNMAP: 'Erbsmap.com',
-		TALGG: 'Tal.GG',
+		LUMIATOOLS: 'Lumia.tools',
 		CODECHAMP: 'CodeChamp',
 		PATHIFY: 'Pathify',
 		TUTORFY: 'Tutorfy'
 	};
 
-	let selected = Projects.ETERNALRETURNMAP;
+	let selected = Projects.ETERNALRETURNMAPV2;
 </script>
 
 <span in:fly={{ x: 100, duration: 500 }} class="flex flex-col gap-6">
@@ -33,7 +34,39 @@
 	</div>
 
 	<div>
-		{#if selected == Projects.ETERNALRETURNMAP}
+		{#if selected == Projects.ETERNALRETURNMAPV2}
+			<div in:fly={{ x: 100, duration: 500 }}>
+				<div class="grid md:grid-cols-2 gap-4">
+					<div class="">
+						<h2 class="text-xl flex items-end gap-2 mb-4">
+							Eternal Return Map Version 2 <a
+								class="text-sm text-lime-200"
+								target="_blank"
+								href="https://www.erbsmap.com/">(erbsmap.com)</a
+							>
+						</h2>
+						<p>
+							An interactive map made for the game Eternal Return. Over <bold class="highlight"
+								>10,000+</bold
+							> visits monthly. Complete remake of Erbsmap.com with a new design and new features. Programmically
+							extracts data from the Unity game files to display the most up to date information.
+						</p>
+						<div class="flex gap-2 mt-2">
+							<IconWithName icon="skill-icons:svelte" iconName="Svelte" />
+							<IconWithName icon="skill-icons:unity-dark" iconName="Unity" />
+							<IconWithName icon="skill-icons:html" iconName="Html" />
+							<IconWithName icon="skill-icons:tailwindcss-dark" iconName="Tailwind" />
+						</div>
+					</div>
+					<img
+						class="image-border rotated w-full"
+						style="--deg: 2deg"
+						src="/erbsmapv2.png"
+						alt="erbsmap.com"
+					/>
+				</div>
+			</div>
+		{:else if selected == Projects.ETERNALRETURNMAP}
 			<div in:fly={{ x: 100, duration: 500 }}>
 				<div class="grid md:grid-cols-2 gap-4">
 					<div class="">
@@ -55,7 +88,7 @@
 						</p>
 						<div class="flex gap-2 mt-2">
 							<IconWithName icon="skill-icons:react-dark" iconName="React" />
-							<IconWithName icon="skill-icons:css" iconName="React" />
+							<IconWithName icon="skill-icons:css" iconName="CSS" />
 							<IconWithName icon="skill-icons:html" iconName="Html" />
 							<IconWithName icon="skill-icons:styledcomponents" iconName="Styled Components" />
 						</div>
@@ -68,13 +101,13 @@
 					/>
 				</div>
 			</div>
-		{:else if selected == Projects.TALGG}
+		{:else if selected == Projects.LUMIATOOLS}
 			<div in:fly={{ x: 100, duration: 500 }}>
 				<div class="grid md:grid-cols-2 gap-4">
 					<div class="">
 						<h2 class="text-xl flex items-end gap-2 mb-4">
-							Tal.GG<a class="text-sm text-lime-200" target="_blank" href="https://www.tal.gg/"
-								>(tal.gg)</a
+							Lumia.Tools<a class="text-sm text-lime-200" target="_blank" href="https://www.tal.gg/"
+								>(lumia.tools)</a
 							>
 						</h2>
 						<p>
@@ -87,8 +120,6 @@
 						<div class="flex gap-2 mt-2">
 							<IconWithName icon="skill-icons:svelte" iconName="Svelte" />
 							<IconWithName icon="skill-icons:aws-dark" iconName="AWS" />
-							<IconWithName icon="skill-icons:gcp-dark" iconName="GCP" />
-							<IconWithName icon="logos:google-cloud-run" iconName="Cloud Run" />
 							<IconWithName icon="skill-icons:mysql-dark" iconName="MySql" />
 							<IconWithName icon="skill-icons:tailwindcss-dark" iconName="Tailwind" />
 							<IconWithName icon="skill-icons:prisma" iconName="Prisma" />
